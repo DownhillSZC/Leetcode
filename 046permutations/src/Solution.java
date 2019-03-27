@@ -16,7 +16,7 @@ public class Solution {
         	if(temp.contains(nums[i])) continue;
         	temp.add(nums[i]);
             handle(nums, n+1, result, temp);
-            temp.remove(nums.length-1);
+            temp.remove(temp.size()-1);
         }
     }
 }
