@@ -9,7 +9,7 @@ public class Solution {
     
     public void handle(int[] nums, int n, List<List<Integer>> result, List<Integer> temp){
         if(n == nums.length){
-            result.add(temp);
+            result.add(new ArrayList<Integer>(temp));
             return;
         }
         for(int i=0; i<nums.length; i++){
